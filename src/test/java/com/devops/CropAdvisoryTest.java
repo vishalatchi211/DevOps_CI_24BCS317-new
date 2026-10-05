@@ -33,7 +33,7 @@ public class CropAdvisoryTest {
     void shouldGiveAdviceForUnknownCombination() {
         CropAdvisory advisory = new CropAdvisory();
 
-        assertEquals("Consult an agricultural expert",
+        assertEquals(""Please consult an agricultural expert",
                 advisory.recommendCrop("Sandy", "Summer"));
     }
 }
