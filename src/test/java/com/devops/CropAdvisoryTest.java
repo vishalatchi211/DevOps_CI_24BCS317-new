@@ -30,10 +30,9 @@ public class CropAdvisoryTest {
     }
 
     @Test
-    void shouldGiveAdviceForUnknownCombination() {
-        CropAdvisory advisory = new CropAdvisory();
-
-        assertEquals(""Please consult an agricultural expert",
-                advisory.recommendCrop("Sandy", "Summer"));
-    }
+void shouldGiveAdviceForUnknownCombination() {
+    CropAdvisory advisory = new CropAdvisory();
+    assertEquals("Please consult an agricultural expert",
+            advisory.recommendCrop("Sandy", "Summer"));
+}
 }
