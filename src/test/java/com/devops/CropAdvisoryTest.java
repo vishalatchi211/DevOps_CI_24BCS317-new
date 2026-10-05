@@ -35,4 +35,10 @@ void shouldGiveAdviceForUnknownCombination() {
     assertEquals("Please consult an agricultural expert",
             advisory.recommendCrop("Sandy", "Summer"));
 }
+@Test
+void shouldHandleCaseInsensitiveInput() {
+    CropAdvisory advisory = new CropAdvisory();
+    assertEquals("Cotton",
+            advisory.recommendCrop("black", "kharif"));
+}
 }
