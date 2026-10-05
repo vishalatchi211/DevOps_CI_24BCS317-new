@@ -19,6 +19,6 @@ public class CropAdvisory {
             return "Groundnut";
         }
 
-        return "Consult an agricultural expert";
+       return "Please consult an agricultural expert";
     }
 }
